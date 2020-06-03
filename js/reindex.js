@@ -1,12 +1,11 @@
-$(".about-pt").onHover(function(){
-	$(".about-pt .img").hind();
-	$(".about-pt span").show();
-});
 
-$(".about-pt").onLeave(function(){
-	$(".about-pt .img").show();
-	$(".about-pt span").hind();
-});
+function onHover2(){
+	$(this).find("span").stop().animate({"opacity": 1}, 300);
+}
+
+function onLeave2(){
+	$(this).find("span").stop().animate({"opacity": 0}, 300);
+}
 
 
 
@@ -46,4 +45,4 @@ $(window).scroll(onScroll); // 2
 
 $(".header .navi").hover(onHover, onLeave);
 
-$(".about-pt").hover(onHover, onLeave);
+$(".about-pt").hover(onHover2, onLeave2);

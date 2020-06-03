@@ -98,7 +98,7 @@ font-family: 'Satisfy', cursive; */
 
 .about-pt > .img {width: 30%;float: left;position: relative;}
 .about-pt > .img:hover {cursor: pointer; opacity: 0.7; background-color: black; color: white;}
-.about-pt > span {position: absolute;padding: 30px 100px;background: rgba(252, 241, 241, 0.637); font-weight: 800; font-size: 24px;left: 18.5%; font-family: 'Playfair Display', 'sans-serif';}
+.about-pt > span {position: absolute; padding: 30px 100px;background: rgba(252, 241, 241, 0.637); font-weight: 800; font-size: 24px;left: 18.5%; font-family: 'Playfair Display', 'sans-serif'; opacity: 0;}
 
 
 

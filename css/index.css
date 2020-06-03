@@ -1,0 +1,215 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*font-family: 'Playfair Display', serif;*/
+/********** 공통사항 **********/
+body {font-family: 'Lato', sans-serif; }
+.wrapper {max-width: 980px; margin: auto; padding: 40px 16px;}
+.wrapper > .title {text-align: center; font-size: 24px; font-weight: normal; padding: 16px 0;}
+.wrapper > .slogan {text-align: center; font-size: 16px; font-weight: normal; padding: 16px 0; font-style: italic; line-height: 150%;}
+.wrapper > .desc {line-height: 150%; padding: 16px 0;}
+.banner {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.banner > h2 {font-weight: normal; font-size: 36px; letter-spacing: 10px; color: #fff; text-align: center; padding: 200px 0;}
+
+
+/********** header **********/
+.header {color: #555; position: fixed; z-index: 99; width: 100%; background-color: #fff; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);}
+.navi-wrap {float: left;}
+.navi-wrap > a {padding: 16px; float: left; color: inherit; text-decoration: none;} 
+.navi-wrap > a:hover {color: #000; background-color: #ccc;} 
+.navi-wrap > a:not(:first-child) {display: none;}
+.search-wrap {float: right;}
+.search-wrap > .fa-bars {padding: 16px; cursor: pointer;} 
+.search-wrap > .fa-bars:hover {background-color: #000; color: #fff;} 
+.search-wrap > .fa-search {padding: 16px; cursor: pointer; display: none;} 
+.search-wrap > .fa-search:hover {background-color: #f21; color: #fff;} 
+
+/********** main-wrap **********/
+.main-wrap {
+	height: 100vh; opacity: 0.75; position: relative;
+	/* background: url('../img/parallax1.jpg') no-repeat center;	 */
+	background-image: url('../img/parallax1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;	
+}
+.main-logo {width: 100%; position: absolute; text-align: center; color: #fff; 
+	font-weight: normal; top: 50%; transform: translateY(-50%); letter-spacing: 15px;}
+.main-logo > div { font-size: 50px; padding: 12px 24px; display: inline-block;}
+.main-slogan {width: 100%; position: absolute; text-align: center; color: rgb(230, 188, 169); 
+	font-weight: normal; top: 60%; transform: translateY(-50%);}
+.main-slogan > div { font-size: 30px; padding: 12px 24px; display: inline-block;}
+
+.main-icon {width: 100%; position: absolute; text-align: center; color: rgb(255, 255, 255); 
+	font-weight: normal; top: 110%; transform: translateY(-50%);}
+.main-icon > div { font-size: 8px; padding: 12px 24px; display: inline-block;letter-spacing: 8px;}
+.main-icon > div > span:hover{cursor: pointer; color: pink;}
+
+
+
+/***************** about-wrap ****************/
+.welcom-wrap {width: 100%; background-color: red;}
+.person {width: 32.3333%; margin: 0.5%; float: left; transition: all 0.75s; border: 1px solid blue;}
+.person > .photo {overflow: hidden;}
+.person > .photo > img { transition: all 0.75s;}
+.photo > .name {text-align: center; padding:20px ; color: pink;}
+.photo > .deco {padding-left:28%;}
+.person:hover { box-shadow: 0 12px 24px rgba(0,0,0, 0.4);}
+.person:hover > .photo > img {opacity: 0.7; cursor: pointer;}
+.person > .name {font-weight: 400; font-size: 20px; padding: 16px 8px; text-align: center;}
+.person > .job {font-weight: 300; font-size: 16px; padding: 8px; color: #666;}
+.person > .desc {padding: 8px;}
+.person > .bts {padding: 8px;}
+.person > .bts > button {width: 100%; padding: 10px; border: none; background-color: #ddd; cursor: pointer; font-size: 16px;transition: all 1s;}
+.person > .bts > button:hover {background-color: #bbb;}
+.person > .desc {font-size: 30px;padding: 25px 0;text-align: center;}
+.person > .bts {padding-bottom: 4px 0 ;}
+.person > .bts > button { background-color: pink; padding: 15px;}
+
+/********** pf-wrap **********/
+.pf-wrap {padding: 16px 0;}
+.prjs {background-color: #666; color: #fff; text-align: center;}
+.prj {width: 100%; float: left; padding: 36px 0;}
+.prj > h3 {font-size: 24px; margin-bottom: 8px;}
+.py-banner {background-image: url('../img/sliderbg2.jpg');
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;	
+  text-align: center;}
+
+.works {color: #888;}
+.work {width: 100%; float: left;}
+.work:hover {opacity: 0.7;}
+.pf-wrap .bts {text-align: center; padding: 32px 0;}
+.bt-load {border: none; background-color: #eee; color: #000; padding: 16px; cursor: pointer;}
+.bt-load:hover {background-color: #ccc;}
+
+.play-wrap {border: 1px solid rebeccapurple;}
+.wrapper {width: 100%; border: 1px solid rgb(153, 143, 51);padding-top: 10%;}
+.banner {padding-top: 15%; color: white;}
+.banner > img {width: 10%}
+.pt-text > .pt-title {padding-bottom: 1%;}
+
+
+.job-wrap {}
+.job-wrap > .wrapper{}
+.jb-text > img {padding-bottom: 20px; text-align: center;}
+.jb-text {padding-left: 22%;}
+.jb-title {font-size: 50px; text-align: center;}
+.jobs {border: 1px solid rgb(182, 182, 182);}
+
+
+
+.envt-wrap {float: left; padding-top: 10%; border: 1px solid red; width: 83%;}
+.envt-text > .img {width: 90%;padding: 40px 0;} 
+.envt-text {border: 1px solid rgb(238, 238, 238); width: 45%; ; padding-left: 70px ;}
+.envt-text:hover{cursor: pointer; background-color: rgb(255, 247, 248);}
+.en-title {font-size: 20px; font-weight: 600; padding-bottom: 20px; padding-left: 50px; padding-top: 50px; }
+.en-desc {color: grey; line-height: 25px;}
+
+
+.tb-text {float: right;}
+.tb-text > .img {width: 90%;padding: 40px 0; } 
+.tb-text {border: 1px solid rgb(238, 238, 238); width: 45%; ; padding-left: 70px ;}
+.tb-text:hover{cursor: pointer; background-color: rgb(255, 247, 248);}
+.tb-title {font-size: 20px; font-weight: 600; padding-bottom: 20px; padding-left: 50px; padding-top: 50px; }
+.tb-desc {color: grey; line-height: 25px;}
+
+.ck-text {float: left;}
+.ck-text > .img {width: 90%;padding: 40px 0; } 
+.ck-text {border: 1px solid rgb(238, 238, 238); width: 45%; ; padding-left: 70px ;}
+.ck-text:hover{cursor: pointer; background-color: rgb(255, 247, 248);}
+.ck-title {font-size: 20px; font-weight: 600; padding-bottom: 20px; padding-left: 50px; padding-top: 50px; }
+.ck-desc {color: grey; line-height: 25px;}
+
+.cr-text {float: right;}
+.cr-text > .img {width: 90%;padding: 40px 0; } 
+.cr-text {border: 1px solid rgb(238, 238, 238); width: 45%; ; padding-left: 70px ;}
+.cr-text:hover{cursor: pointer; background-color: rgb(255, 247, 248);}
+.cr-title {font-size: 20px; font-weight: 600; padding-bottom: 20px; padding-left: 50px; padding-top: 50px; }
+.cr-desc {color: grey; line-height: 25px;}
+
+
+.show-wrap {}
+.show-wrap > .wrapper{}
+.sh-text > img {padding-left: 18%; padding-bottom: 20px;}
+.sh-text {padding-left: 22%;text-align: center;}
+.sh-title {font-size: 40px;padding-bottom: 10px;}
+.sh-desc {line-height: 25px;  padding-right: 50%;}
+
+
+
+.shows { float: left; padding-top: 60px;}
+.shows > img {float: left; width: 20%;}
+.shows > img:hover {cursor: pointer; opacity: 0.7;}
+
+.pt-wrap{}
+.pt-wrap > .wrapper {width: 100%;padding-right: 37%; text-align: center;}
+.pt-title {font-size: 45px; padding:20px 0}
+.pt-desc {font-size: 17px; line-height: 28px;}
+
+.pt-list {float: left; width: 80%; padding-left: 20%; padding-top: 40px;}
+.pt-list > img {padding-bottom: 10px ;}
+.pt-list > img:hover{opacity: 0.5;}
+ 
+
+
+.news-wrap {} 
+.new-text {text-align: center;}
+.new-text > img {padding-right: 20%; width: 13%; padding-bottom: 20px;}
+.new-title {font-size: 40px; padding-right: 15%; padding-bottom: 20px;}
+.new-desc {padding-right: 15%; line-height: 28px;}
+
+.
+.read-pho {float: left;}
+.save-day {padding: 20px 0; font-size: 15px; color: gray;}
+.save-title {font-size: 23px; line-height: 28px; padding-bottom: 30px ;}
+.bts > button {border: none; background-color: white;}
+
+.good-day {padding: 20px 0; font-size: 15px; color: gray;}
+.good-title {font-size: 23px; line-height: 28px; padding-bottom: 30px ;}
+.good-bts > button {border: none; background-color: white;}
+
+.how-day {padding: 20px 0; font-size: 15px; color: gray;}
+.how-title {font-size: 23px; line-height: 28px; padding-bottom: 30px ;}
+.how-bts > button {border: none; background-color: white;}
+
+
+.your-wrap > img {width: 100%;height: 600px;}
+
+
+
+
+
+.cities {margin-top: 30px;}
+.city {float: left; width: 32%;}
+.city:nth-child(2) {margin: 0 2%;}	
+.city > .conts {background-color: #fff; padding: 16px;}
+.city > .photo > img {width: 80%;}
+.city > .photo > img:hover {opacity: 0.6; cursor: pointer;}
+.city > .conts > h3 {padding: 6px 0; font-size: 20px;}
+.city > .conts > p {padding: 6px 0; color: #999;}
+.city > .conts > .summary {padding: 6px 0;}
+.city > .conts > .bt-buy {padding: 12px 0; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);
+	display: inline-block; margin-top: 12px;}
+.city > .conts > .bt-buy:hover {background-color: rgb(255, 255, 255); color: rgb(207, 142, 169); 
+	cursor: pointer;}
+
+
+
+
+
+/***************** footer ****************/
+.footer { padding: 32px 20%; color: rgb(139, 139, 139); font-size: 15px; background-color: rgb(68, 68, 68);}
+.footer a {color: #fff;}
+.footer a:hover {color: #177934;}

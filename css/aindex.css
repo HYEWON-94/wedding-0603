@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Satisfy&display=swap');
+/* font-family: 'Playfair Display', serif;
+font-family: 'Satisfy', cursive; */
+/* ***** 공통사항****** */
+.wrapper {max-width: 1200px; margin: auto;}
+
+.bt-top {width: 50px;height: 50px; border: 1px solid #5555553a; background-color: rgba(218, 168, 156, 0.418); display: table; font-size: 1.25rem; color: #ffffff; border-radius: 3px; transition: all 1s; cursor: pointer; position: fixed; bottom: 40px; right: 40px; z-index: 999; visibility: hidden;}
+.bt-top:hover {color: rgb(218, 168, 156) ; background-color: #ffffff;}
+
+.bt-top > .fa {display: table-cell;text-align: center;vertical-align: middle;}
+
+
+
+.main-wrap {background: url(../img/slider-bg8.jpg) no-repeat center; background-size: cover; height: 80vh; position: relative;}
+.header { color: rgba(255, 255, 255, 0.658);}
+.header .tops {padding: 10px;}
+.header .tel , .emil, .text {float: left; padding-left: 20px; font-family: 'Playfair Display', serif;}
+.header .tel , .emil:hover {cursor: pointer;}
+.header .link-wrap {float: right;}
+.header .logo {float: left;padding: 10px;}
+.header .logo:hover{cursor: pointer;}
+.header .navi-wrap {float: right; padding: 12px ; font-family: 'Playfair Display', serif; ;}
+.header .navi {float: left; padding: 12px 30px; font-weight: 800;}
+.header .navi:hover{cursor: pointer;color: pink;}
+.header .border {border-bottom: 1px solid rgba(255, 255, 255, 0.247);}
+.header .search-wrap {float: right;}
+.header-icon {float: right; letter-spacing: 10px;}
+.header-icon > span:hover {cursor: pointer; color: pink;}
+.header .fa {float: right; padding: 15px;}
+.header .fa:hover {cursor: pointer;}
+.main-text {width: 800px; height: 100px;  position: absolute; top: 50%; left: 50%; 
+  transform: translate(-50%, -50%);}
+
+.navi >ul{display: none;}
+
+.main-text > .main-slogan {font-size: 60px; color: white; font-family: 'Playfair Display', serif; font-weight: 600; text-align: center;}
+.main-text > .main-desc { font-size: 20px; color: rgb(233, 177, 140); text-align: center;font-family: 'Satisfy', cursive; padding-top: 15px; font-style: italic;}
+.pager {position: absolute; bottom: 5%; left: 50%; transform: translate(-50%,-50%); font-size: 5px;}
+.pager > span {letter-spacing: 8px; color: white;}
+.pager > span:hover {cursor: pointer; color: pink;}
+
+
+/* ***********welcome-wrap********* */
+.weclome {;}
+.about-wrap { height: 100%;}
+.about-wrap > .wrapper { height: 80vh; padding: 150px 0; }
+.about-wrap > .abouts  >.about-pt {width: 33.333%; float: left;  border: 1px solid red;}
+
+.about-logo {font-family: 'Satisfy', cursive; color: rgb(218, 168, 156); font-size: 25px; font-weight: 800;}
+.about-pt > .img {width: 30%;float: left;}
+.about-pt > .img:hover {cursor: pointer; opacity: 0.7; background-color: black; color: white;}
+.about-text {text-align: center;width: 40%; float: left; padding: 0 10px; 
+   font-family: 'Playfair Display'}
+.about-text > img {padding:20px 0;}
+
+.about-text > .about-title {padding:20px 0; font-size: 36px; serif; font-weight: 800;}
+.about-text > .about-bts {padding:5px 0; }
+.about-bts >button {padding: 13px 35px;  font-weight: 600;font-family: 'Playfair Display'; 
+  background-color: rgb(255, 222, 209); border: none; transition: all 1s;}
+.about-bts >button:hover{cursor: pointer; background-color: black; color: white;}
+
+.show-wrap {
+background: url(../img/sliderbg2.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 50vh;
+position: relative;
+}
+.show-wrap > .wrapper {padding: 15%; 
+text-align: center; height: 60vh}
+.show-text > img:hover{cursor: pointer;}
+.show-text {;font-family: 'Playfair Display'; position: absolute; top: 40%; left: 40%;}
+.show-title {color: white;font-size: 20px; font-weight: 800; padding-bottom: 20px;}
+.show-desc {color: white;font-weight: 600; font-size: 20;}
+
+
+.job-wrap {}
+.job-wrap > .wrapper {padding: 80px 80px;text-align: center;}
+.jobs-text { text-align: center; padding: 20px; }
+
+.job-title {font-size: 50px; ;font-family: 'Playfair Display'; font-weight: 800; padding: 20px 0;}
+.jobbox {;height: 100vh; width: 100%;}
+.boxs {border: 1px solid rgb(214, 214, 214);height: 50vh; width: 48%; float: left; position: relative;margin: 1%;}
+.boxs:hover{cursor: pointer; background-color: rgb(241, 220, 215);}
+.box-text {width: 80%; height: 30vh; position: absolute; top: 15%; left: 10%;}
+.bx-title {font-family: 'Playfair Display'; font-weight: 800; padding: 20px 0; font-size: 20px;text-align: left;}
+.bx-desc {font-family: 'Playfair Display';text-align: left; line-height: 25px;padding-bottom: 30px; }
+
+
+
+
+
+
+
+
+.gallery-wrap {}
+.gallery-wrap > .wrapper{}
+.gallery-text > img {padding-left: 18%; padding-bottom: 20px;}
+.gallery-text {padding-left: 22%;text-align: center;font-family: 'Playfair Display', serif;}
+.gallery-title {font-size: 40px;padding-bottom: 10px;}
+.gallery-desc {line-height: 25px;  padding-right: 1%;font-family: 'Playfair Display'}
+
+
+
+.gallery-photo { float: left; padding-top: 60px;}
+.gallery-photo > div {float: left; width: 20%; overflow: hidden; position: relative;}
+.gallery-photo .hover-div {border: 1px solid red;width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.6); position: absolute; top: 0; left: 0;}
+.gallery-photo > div > img {transition: all 1s; cursor: pointer;}
+.gallery-photo > div > img:hover {opacity: 0.7; transform: scale(1.2);}
+.gallery-photo > div > .hover-div > .fa {color: #b3b3b3; font-size: 80px; position: absolute; top: 40%; left: 35%; display: inline-block;}
+
+
+.our-wrap{height: 70vh;}
+.our-wrap > .wrapper {height: 150vh;}
+.our-text {width: 100%; text-align: center; height: 50vh;}
+.our-text > img {padding-top: 80px ;}
+.our-title {font-size: 45px; ;font-family: 'Playfair Display'; font-weight: 800; padding: 20px 0;}
+.our-desc {line-height: 25px; font-family: 'Playfair Display';}
+.logos{background-color:rgb(255, 255, 255);}
+.logos > img:hover {opacity: 0.2;}
+.our-photo {;text-align: center;
+  padding-top: 450px;padding-bottom: 60px; }
+
+
+
+.rv-wrap {background-image: url(../img/pink.png);height: 110vh;}
+.rv-wrap > .wrapper {margin-left: 600px; padding-top: 120px}
+.rv-forms {background-color: rgb(255, 255, 255);height: 80vh; width: 800px;}
+.rv-forms {text-align: center; padding-top: 80px;}
+.rv-forms > img {}
+.rv-forms > .title {padding: 20px 0; font-size: 50px; font-family: 'Playfair Display'; font-weight: 800;}
+.forms-wrap {}
+.forms {padding-top: 20px;;height: 70vh;}
+.forms > input {padding: 15px 270px;border: none; border-bottom: 4px solid rgb(226, 226, 226) ;
+  text-align:left; font-family: 'Playfair Display'; font-weight: 800; }
+.forms > Message {padding: 80px 0;}
+.number {border: none; border-bottom: 4px solid rgb(226, 226, 226) ; padding: 15px 70px;font-family: 'Playfair Display'; font-weight: 800;}
+
+.textarea {font-family: 'Playfair Display'; font-weight: 800;width: 85%; min-height: 160px; padding: 30px; font-size: 16px;border: none; border-bottom: 4px solid rgb(226, 226, 226) ; }
+.name {font-family: 'Playfair Display'; font-weight: 600;width: 85%; min-height: 10px; padding: 6px 30px; font-size: 16px;border: none;
+   border-bottom: 4px solid rgb(226, 226, 226) ; }
+
+.rv-bts {padding-top: 40px; }
+.rv-bts > button {font-family: 'Playfair Display'; font-weight: 800; border: none; padding: 15px 30px;background-color: rgb(233, 185, 163); transition: all 0.5s;}
+.rv-bts > button:hover{cursor: pointer; background-color: black; color: #ffffff;}
+
+
+
+.new-wrap{height: 40vh;}
+.new-wrap > .wrapper {padding-top:60px;}
+.new-text {width: 100%; text-align: center;}
+.new-text > img {padding: 20px;}
+.new-title {font-size: 45px; ;font-family: 'Playfair Display'; font-weight: 800; padding: 20px 0;}
+
+.new-desc {line-height: 25px; font-family: 'Playfair Display';} 
+
+.new-photo {padding: 50px 0;padding-left: 10px;}
+.nphotos{width: 33%; float: left;}
+.nphotos > .good-wrap> img {text-align: center;  cursor: pointer;}
+.nphotos > .good-wrap> .hover-icon{float: left;}
+
+
+
+
+
+.good-day {padding: 20px 0; color: gray;  font-size: 15px;font-family: 'Playfair Display';}
+.good-title {font-family: 'Playfair Display'; font-size: 24px;padding-bottom: 30px; }
+.good-title:hover{cursor: pointer; color: rgb(241, 188, 171);}
+.good-bts {}
+.good-bts > button {border: none;font-family: 'Playfair Display'; background-color: white; font-weight: 800;}
+.good-bts > button:hover {cursor: pointer; color: rgb(241, 188, 171);}
+.good-bts > .fa {color: #aaaaaa; cursor: pointer;}
+.good-bts > .fa:hover {color:rgb(241, 188, 171);}
+.good-bts > button > .span { font-size: 60px;}
+
+
+
+
+.perfect-wrap {
+  background: url(../img/slider-bg12.jpg);
+  background-size: cover
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  }
+  .perfect-wrap > .wrapper {padding: 15%; 
+  text-align: center; height: 60vh; margin-left: 600px;}
+  .perfect-text > img {padding: 30px;}
+  .perfect-text {text-align: center;font-family: 'Playfair Display'; position: absolute; top: 30%;left: 35%; }
+  .perfect-title {color: white;font-size: 50px; font-weight: 800; padding-bottom: 30px;left: 40px;}
+  .perfect-bts { }
+  .pf-bts > button {border: none; padding: 15px 30px;background-color:#fae0d3; font-family: 'Playfair Display'; font-weight: 800;transition: all 1s ;}
+  .pf-bts > button:hover {cursor: pointer; background-color: black; color: white; font-family: 'Playfair Display'; font-weight: 800;}
+
+
+.footer-wrap {background-color: rgb(31, 31, 31);height: 10vh;}
+.footer {height: 15vh;padding: 35px 40px; color: gray;}
+
+.ft-text {float: left;font-family: 'Playfair Display'; font-size: 14px;}
+.ft-icon {float: right;padding: 0 20px; letter-spacing: 10px;}

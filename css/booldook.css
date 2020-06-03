@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*font-family: 'Playfair Display', serif;*/
+
+.wrapper {max-width: 1200px; margin: auto; border: 1px solid green;}
+
+
+.main-wrap {background: url(../img/slider-bg8.jpg) no-repeat center; background-size: cover; height: 80vh; position: relative;}
+.header {border: 1px solid red; color: white;}
+.header .tel {float: left;}
+.header .link-wrap {float: right;}
+.header .logo {float: left;}
+.header .navi-wrap {float: right;}
+.header .navi {float: left; padding: 12px;}
+.header .border {border-bottom: 1px solid white;}
+
+.main-slogan {width: 300px; height: 100px; background-color: yellowgreen; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)}

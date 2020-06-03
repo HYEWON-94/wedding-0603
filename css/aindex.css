@@ -105,8 +105,9 @@ font-family: 'Satisfy', cursive; */
 
 .about-pt > .imgr {width: 30%;float: left;position: relative;}
 .about-pt > .imgr:hover {cursor: pointer; opacity: 0.7; background-color: black; color: white;}
+.about-pt > .imgr:hover .text-r {opacity: 1;}
 .about-pt > .text-r {position: absolute; padding: 30px 100px;background: rgba(252, 241, 241, 0.637);
-   font-weight: 800; font-size: 24px; left: 62.6%;font-family: 'Playfair Display', 'sans-serif';}
+   font-weight: 800; font-size: 24px; left: 62.6%;font-family: 'Playfair Display', 'sans-serif';opacity: 0;}
 .about-text {text-align: center;width: 40%; height: 8%; float: left; padding: 0 10px; font-family: 'Playfair Display', 'sans-serif';}
 .about-text > img {padding:20px 0;}
 

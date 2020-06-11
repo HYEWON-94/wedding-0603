@@ -1,62 +1,3 @@
-
-function onHover2(){
-	$(this).find("span").stop().animate({"opacity": 1}, 300);
-}
-
-function onLeave2(){
-	$(this).find("span").stop().animate({"opacity": 0}, 300);
-}
-
-
-
-
-
-
-/* ******* 사용자 함수********** */
-/* ******* 이벤트 콜백********** */
-function onScroll() {
-	var scTop = $(this).scrollTop();
-	if(scTop > 800) $(".bt-top").css("visibility","visible");
-	else $(".bt-top").css("visibility", "hidden");
-}
-function onTopClick() {
-	$("html, body").stop().animate({"scrollTop": 0}, 800);
-}
-
-
-
-function onHover() {
-$(this).find(".subs").stop().fadeIn(500);
-$(this).find(".subs-rt").stop().fadeIn(500);
-
-}
-
-function onLeave() {
-$(this).find(".subs").stop().fadeOut(500);
-$(this).find(".subs-rt").stop().fadeOut(500);
-}
-
-var px, py, isDrag = false;
-function onMove(e) {
-	$(".cursor").css({"left" : (e.pageX -25)+"px","top" : (e.pageY + 1) + "px"});
-if(isDrag) {
-	px = e.pageX - $(".box").innerWidth()/2
-	px = e.pageY - $(".box").innerHeight()/2;
-}
-}
-
-
-/* ******* 이벤트 선언********** */
-
-$(".bt-top").click(onTopClick); // 1
-$(window).scroll(onScroll); // 2
-
-$(".header .navi").hover(onHover, onLeave);
-
-$(".about-pt").hover(onHover2, onLeave2);
-
-
-
 /******** 사전지식 ********/
 var arr = [1000, 999, 998, 997];
 // 1. 배열의 맨 뒤의 값을 꺼내기
@@ -90,7 +31,7 @@ console.log(arr);
 var now = 0;
 var last = $(".ban").length - 1;
 var idx = [];
-var speed = 500;
+var speed = 4000;
 var gap = 3000;
 var interval;
 init();
@@ -98,9 +39,9 @@ pagerMaker();
 
 /******** 사용자정의 함수 ********/
 function init() {
-	for(var i=0, depth=1000; i<=last; i++) {
+	for(var i=0, depth=000; i<=last; i++) {
 		idx[i] = depth;
-		$(".ban").eq(i).css("z-index", depth--);
+		$(".ban", ".ban .text").eq(i).css("z-index", depth--);
 	}
 }
 
@@ -130,7 +71,7 @@ function onPagerClick() {
 	pagerChg();
 	idx.pop();
 	idx.unshift(idx[0] + 1);
-	$(".ban").eq(now).css({
+	$(".ban" ,".ban .text").eq(now).css({
 		"opacity": 0,
 		"z-index": idx[0]
 	});
@@ -170,3 +111,4 @@ function onNext() {
 		});
 	});
 }
+

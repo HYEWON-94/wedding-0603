@@ -1,3 +1,6 @@
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Satisfy&display=swap');
 /* font-family: 'Playfair Display', serif;
 font-family: 'Satisfy', cursive; */
@@ -9,20 +12,32 @@ font-family: 'Satisfy', cursive; */
 
 .bt-top > .fa {display: table-cell;text-align: center;vertical-align: middle;}
 
+/* *********** banner *********** */
+
+.pagers {position: absolute; top:320%; left: 50%; transform: translateX(-50%); color: #fff;z-index: 9999;}
+.pager {margin: 0 2px; cursor: pointer;padding: 0 10 ;}
 
 
-.main-wrap {background: url(../img/slider-bg8.jpg) no-repeat center; background-size: cover; height: 80vh; position: relative;}
-.header { color: rgba(255, 255, 255, 0.658); padding-bottom: 100px; background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0));}
+.ban-wrap {position: relative; width: 100%; }
+.ban {width: 100%; position: absolute;top: 5;}
+.ban > img {height: 80vh;width: 100%; position: relative;}
+.ban > .ban-text {position: absolute; left: 30%;top: 40% ; font-size: 60px;color: #fff; line-height: 4rem;text-align: center;font-family: 'Playfair Display', serif; font-weight: 800;}
+.ban > p {position: absolute; left: 45%;top: 60% ; font-size: 24px;color:  rgb(233, 177, 140); text-align: center;font-family: 'Satisfy', cursive; padding-top: 20px }
+
+/* *********** .navi-wrap *********** */
+
+
+.main-wrap {;}
+.header { color: rgba(255, 255, 255, 0.658); padding-bottom: 100px;/*  linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0));z-index: 9999; */ position: relative;z-index: 9999;}
 .header .tops {padding: 10px;}
 .header .tel , .emil, .text {float: left; padding-left: 20px; font-family: 'Playfair Display', serif;}
 .header .tel , .emil:hover {cursor: pointer;}
 .header .link-wrap {float: right;}
 .header .logo {float: left;padding: 10px;}
 .header .logo:hover{cursor: pointer;}
-.header .navi-wrap {float: right; padding: 10px 20px ; font-family: 'Playfair Display', serif; color: #ffffff;}
-.header .navi {float: left; padding: 12px 20px; font-weight: 800; position: relative;;}
-.header .navi:hover{cursor: pointer;color: rgb(233, 177, 140);}
-
+.header .navi-wrap {float: right; padding: 10px 20px ; ;font-family: 'Playfair Display', serif; color: #ffffff;width: 100;width: 44%;position: absolute; left;margin-left: 20%;}
+.header .navi .nav {float: left; padding: 12px 20px; font-weight: 800; ;font-size: 15px;}
+.header .navi .nav:hover{cursor: pointer;color: rgb(233, 177, 140);}
 .header .navi:nth-child(1) .subs {margin-top: 20px;width: 350px; height: 280px; background: #fff5f5; color: #555555; display: none; position: absolute; z-index: 99; left: -150%;}
 .header .subs > .subs-rt {float: right;position: absolute; top: 0%; left: 45%;}
 .header .subs > .subs-rt > .sub > span {font-size: 10px; background-color: #e16461; color: #ffffff;border-radius: 20%;text-align: center;line-height: 50%; margin: 5px; width: 200px; height: 200px;}
@@ -55,19 +70,10 @@ font-family: 'Satisfy', cursive; */
 .header .navi:nth-child(5) .sub-rt .text > p {padding: 10px; width: 130%; font-size: 12px;}
 
 
-
-
-
 .header .navi:nth-child(7) .subs {margin-top: 20px;width: 180px; height: 240px; background: #fff5f5; color: #555555; display: none; position: absolute; z-index: 99;}
 
 .header .navi:nth-child(7) .subs .sub {border-bottom: 1px solid #ebebeb;padding-bottom: 8px;margin: 10px 0;}
 .header .navi:nth-child(7) .subs .sub:hover {background-color: #ffffff}
-
-
-
-
-
-
 
 .header .border {border-bottom: 1px solid rgba(255, 255, 255, 0.247);}
 .header .search-wrap {float: right;}
@@ -89,7 +95,7 @@ font-family: 'Satisfy', cursive; */
 
 /* ***********welcome-wrap********* */
 .weclome {;}
-.about-wrap { height: 100%;}
+.about-wrap { height: 100%; margin-top: 39rem;}
 .about-wrap > .wrapper { height: 80vh; padding: 150px 0; }
 .about-wrap > .abouts  >.about-pt {width: 33.333%; float: left;  border: 1px solid red;}
 
@@ -97,7 +103,7 @@ font-family: 'Satisfy', cursive; */
 
 
 .about-pt > .img {width: 30%;float: left;position: relative;}
-.about-pt > .img:hover {cursor: pointer; opacity: 0.7; background-color: black; color: white;}
+.about-pt > .img:hover {cursor: pointer; opacity: 0.7; }
 
 .about-pt > span {position: absolute; padding: 30px 100px;background: rgba(252, 241, 241, 0.637); font-weight: 800; font-size: 24px;left: 15.33%; font-family: 'Playfair Display', 'sans-serif'; opacity: 0;}
 
@@ -111,7 +117,7 @@ font-family: 'Satisfy', cursive; */
 .about-text {text-align: center;width: 40%; height: 8%; float: left; padding: 0 10px; font-family: 'Playfair Display', 'sans-serif';}
 .about-text > img {padding:20px 0;}
 
-.about-text > .about-title {padding:20px 0; font-size: 36px; font-weight: 800;}
+.about-text > .about-title {padding:20px 0; font-size: 36px; font-weight: 800; color: #000000;}
 .about-text > .about-bts {padding:5px 0; }
 .about-bts >button {padding: 13px 35px;  font-weight: 600;font-family: 'Playfair Display', 'sans-serif'; background-color: rgb(233, 177, 140); border: none; transition: all 1s; color: #494949;}
 .about-bts >button:hover{cursor: pointer; background-color: black; color: white;}
@@ -141,7 +147,7 @@ text-align: center; height: 60vh}
 .boxs:hover{cursor: pointer; background-color: rgb(248, 237, 234);}
 .box-text {width: 80%; height: 30vh; position: absolute; top: 15%; left: 10%;}
 .bx-title {font-family: 'Playfair Display'; font-weight: 800; padding: 20px 0; font-size: 20px;text-align: left;}
-.bx-title > i {font-size: 40px; color: rgb(243, 209, 200);padding: 10px; }
+.bx-title > i {font-size: 40px; color: rgb(233, 177, 140);padding: 10px; }
 .bx-desc {font-family: 'Playfair Display';text-align: left; line-height: 25px;padding-bottom: 30px; }
 
 
